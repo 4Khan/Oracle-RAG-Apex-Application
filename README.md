@@ -8,7 +8,6 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 
 - 🔍 Document retrieval using vector search in Oracle Autonomous Database 23ai
 - 🤖 LLM-based answer generation using OCI Generative AI service
-- 🧩 Modular pipeline for easy customisation
 - 🖼️ Interactive UI with Oracle APEX
 - 📁 Document ingestion and embedding in Oracle Autonomous Database 23ai
 
@@ -20,7 +19,8 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 - **Python 3.10+**
 - **Streamlit**
 
-**Demo 2: Oracle Live Labs - RAG Example**
+**Demo 2: Oracle Live Labs** 
+- **RAG Example**
 - **Oracle 23ai Databases**
 - **Oracle APEX**
 
