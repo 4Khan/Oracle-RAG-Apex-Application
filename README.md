@@ -1,6 +1,4 @@
-# Oracle-RAG-Application
-
-# 🧠 Retrieval-Augmented Generation (RAG) Demo
+# 🧠 Oracle Retrieval-Augmented Generation (RAG) Application
 
 This repository showcases a demo implementation of a **Retrieval-Augmented Generation (RAG)** application. It combines document retrieval with large language model (LLM) generation to provide accurate, context-aware responses based on external knowledge sources.
 
