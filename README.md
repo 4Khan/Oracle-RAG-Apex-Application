@@ -34,7 +34,20 @@ pip install -r requirements.txt
 
 ---
 
-## 🤖 Authors
-Amaan Khan & Funmi Looi-Somoye
+## 📸 Demo Preview
+
+
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋‍♀️ Author
+
+**Amaan Khan & Funmi Looi-Somoye**  
 
 
