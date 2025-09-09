@@ -9,8 +9,8 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 - 🔍 Document retrieval using vector search in Oracle Autonomous Database 23ai
 - 🤖 LLM-based answer generation using OCI Generative AI service
 - 🧩 Modular pipeline for easy customisation
-- 🖼️ Interactive UI with Streamlit or Gradio
-- 📁 Local document ingestion and embedding
+- 🖼️ Interactive UI with Oracle APEX
+- 📁 Document ingestion and embedding in Oracle Autonomous Database 23ai
 
 ---
 
