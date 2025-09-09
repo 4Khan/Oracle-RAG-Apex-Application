@@ -31,3 +31,10 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 git clone https://github.com/yourusername/rag-demo.git
 cd rag-demo
 pip install -r requirements.txt
+
+---
+
+## 🤖 Authors
+Amaan Khan & Funmi Looi-Somoye
+
+
