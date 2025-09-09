@@ -21,8 +21,8 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 - **Streamlit**
 
 **Demo 2: Oracle Live Labs - RAG Example**
---**Oracle 23ai Databases**
---**Oracle APEX**
+-**Oracle 23ai Databases**
+-**Oracle APEX**
 
 ---
 
