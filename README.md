@@ -6,8 +6,8 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 
 ## 🚀 Features
 
-- 🔍 Document retrieval using vector search (e.g., FAISS, Pinecone)
-- 🤖 LLM-based answer generation (OpenAI, Hugging Face Transformers, etc.)
+- 🔍 Document retrieval using vector search in Oracle Autonomous Database 23ai
+- 🤖 LLM-based answer generation using Cohere
 - 🧩 Modular pipeline for easy customization
 - 🖼️ Interactive UI with Streamlit or Gradio
 - 📁 Local document ingestion and embedding
