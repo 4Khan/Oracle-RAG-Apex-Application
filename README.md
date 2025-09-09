@@ -16,12 +16,13 @@ This repository showcases a demo implementation of a **Retrieval-Augmented Gener
 
 ## 🛠️ Tech Stack
 
+**Demo 1: Microservices Sandbox**
 - **Python 3.10+**
-- **LangChain / LlamaIndex / Haystack** (optional)
-- **OpenAI / Hugging Face Transformers**
-- **FAISS / Pinecone / Elasticsearch**
-- **Streamlit / Gradio**
-- **Jupyter Notebooks** for experimentation
+- **Streamlit**
+
+**Demo 2: Oracle Live Labs - RAG Example**
+--**Oracle 23ai Databases**
+--**Oracle APEX**
 
 ---
 
@@ -46,7 +47,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🙋‍♀️ Author
+## 🙋‍♀️ Authors
 
 **Amaan Khan & Funmi Looi-Somoye**  
 
