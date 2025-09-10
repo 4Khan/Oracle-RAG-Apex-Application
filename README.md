@@ -1,65 +1,52 @@
-# 🧠 Oracle Retrieval-Augmented Generation (RAG) APEX Application
+# Notes from Oracle LiveLabs: Building RAG Applications
 
-This repository showcases a demo implementation of a **Retrieval-Augmented Generation (RAG)** application. It combines document retrieval with large language model (LLM) generation to provide accurate, context-aware responses based on external knowledge sources.
-
----
-
-## 🚀 Features
-
-- 🔍 Document retrieval using vector search in Oracle Autonomous Database 23ai
-- 🤖 LLM-based answer generation using OCI Generative AI service
-- 🖼️ Interactive UI with Oracle APEX
-- 📁 Document ingestion and embedding in Oracle Autonomous Database 23ai
+> Personal notes and learnings from following Oracle LiveLabs workshops on Retrieval-Augmented Generation (RAG).  
+> **No workshop code is included.** These are our reflections, architectures, evaluations, and debugging logs.
 
 ---
 
-## 🛠️ Tech Stack
-
-**Demo 1: Microservices Sandbox**
-- **Python 3.10+**
-- **Streamlit**
-
-**Demo 2: Oracle Live Labs** 
-- **RAG Example**
-- **Oracle 23ai Databases**
-- **Oracle APEX**
+## 📌 Why This Repo?
+We created this repository to:
+- Document what we learned about RAG while following Oracle LiveLabs workshops.
+- Share the technologies we used and why.
+- Record challenges, debugging steps, and lessons learned.
+- Provide a quick reference for anyone exploring RAG.
 
 ---
 
-## 📦 Installation
+## 🔍 What is RAG?
+**Retrieval-Augmented Generation (RAG)** combines:
+- A **retriever**: fetches relevant context from your data.
+- A **generator**: an LLM that uses this context to produce grounded answers.
 
-
-git clone https://github.com/yourusername/rag-demo.git
-cd rag-demo
-pip install -r requirements.txt
-
----
-
-## 📸 Demo Preview
-
-
-
----
-## 🐞 Known Issues & Bugs
-
-We discovered a few issues and bugs with the application when following the demo tutorial. The known issues and bugs are found below:
-
-- **Retrieval inconsistencies**: Occasionally, the retriever may return irrelevant or low-quality documents, especially when queries are ambiguous or under-specified.
-- **Latency**: Response times may be slower than expected due to the size of the document corpus and model inference time.
-- **Context window limitations**: Large retrieved documents may be truncated or omitted if they exceed the model’s context window.
-- **Error handling**: Some edge cases (e.g., empty queries, malformed inputs) may not be gracefully handled yet.
-- **UI/UX quirks**: If you're using a frontend, you might notice minor layout or interaction issues depending on the browser.
+**Typical RAG pipeline:**
+1. **Ingest** → Chunk documents, clean text, compute embeddings.
+2. **Index** → Store vectors in a vector database.
+3. **Retrieve** → Find top-k relevant chunks by similarity/hybrid search.
+4. **Augment** → Insert retrieved context into the prompt.
+5. **Generate** → LLM answers, ideally with citations.
+6. **Evaluate** → Measure retrieval quality, faithfulness, latency, and cost.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
+## 🛠 Tech Stack (Used in Our Setup)
+- **Cloud Platform**: Oracle Cloud Infrastructure (OCI)
+- **Vector Store**: Oracle Database 23ai
+- **Embeddings Model**: [fill in]
+- **LLM**: [fill in]
+- **Orchestration / SDKs**: [fill in]
+- **Evaluation Tools**: [fill in]
 
 ---
 
-## 🙋‍♀️ Authors
-
-**Amaan Khan & Funmi Looi-Somoye**  
-
-
+## 🏗 Architecture (High-Level)
+```mermaid
+flowchart LR
+    A[Raw Docs] --> B[Chunk & Clean]
+    B --> C[Embeddings]
+    C --> D[(Vector Index)]
+    E[User Query] --> F[Retriever: top-k]
+    D --> F
+    F --> G[Prompt Assembly with Context]
+    G --> H[LLM Generation]
+    H --> I[Answer + Citations]
