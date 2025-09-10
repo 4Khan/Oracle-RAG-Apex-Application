@@ -34,8 +34,7 @@ We created this repository to:
 - **Vector Store**: Oracle Database 23ai
 - **Embeddings Model**: [fill in]
 - **LLM**: [fill in]
-- **Orchestration / SDKs**: [fill in]
-- **Evaluation Tools**: [fill in]
+- **Front End**: Oracle APEX
 
 ---
 
