@@ -49,3 +49,13 @@ flowchart LR
     F --> G[Prompt Assembly with Context]
     G --> H[LLM Generation]
     H --> I[Answer + Citations]
+
+```
+
+---
+
+## 👥 Authors
+
+- **4Khan & FunmiLS** 
+
+
