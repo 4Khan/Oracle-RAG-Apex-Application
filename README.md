@@ -32,8 +32,8 @@ We created this repository to:
 ## 🛠 Tech Stack (Used in Our Setup)
 - **Cloud Platform**: Oracle Cloud Infrastructure (OCI)
 - **Vector Store**: Oracle Database 23ai
-- **Embeddings Model**: [fill in]
-- **LLM**: [fill in]
+- **Embeddings Model**: all-MiniLM-L12-v2
+- **LLM**: Cohere Command R+ 08-2024
 - **Front End**: Oracle APEX
 
 ---
