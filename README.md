@@ -1,7 +1,7 @@
 # Notes from Oracle LiveLabs: Building RAG Applications
 
 > Personal notes and learnings from following Oracle LiveLabs workshops on Retrieval-Augmented Generation (RAG).  
-> **No workshop code is included.** These are reflections, evaluations, and debugging logs.
+> **No workshop code is included.** These are reflections and debugging logs.
 
 ---
 
@@ -51,6 +51,32 @@ flowchart LR
     H --> I[Answer + Citations]
 
 ```
+---
+
+## ⚠️ Challenges & Debugging Log
+> A rolling log of issues, root causes, and fixes.
+
+Example: **[2025-09-10] Irrelevant Context in Answers**  
+- **Symptom:** Model cited unrelated chunks.  
+- **Root Cause:** Chunk size too large; missing metadata.  
+- **Fix:** Reduced chunk size to ~500 tokens with overlap; added titles to metadata; enabled hybrid search.
+
+**[YYYY-MM-DD] [Short Title]**  
+- **Symptom:**  
+- **Root Cause:**  
+- **Fix:**  
+- **Notes:**  
+
+---
+
+## ✅ Lessons Learned
+- 
+
+---
+
+## 📚 References
+
+- Oracle LiveLabs
 
 ---
 
