@@ -46,7 +46,7 @@ flowchart LR
     C --> D[(Vector Index)]
     E[User Query] --> F[Retriever: top-k]
     D --> F
-    F --> G[Prompt Assembly with Context]
+    F --> G[Prompt Assembly <br>with Context]
     G --> H[LLM Generation]
     H --> I[Answer + Citations]
 
