@@ -6,9 +6,9 @@
 ---
 
 ## 📌 Why This Repo?
-We created this repository to:
-- Document what we learned about building RAG applications while following Oracle LiveLabs workshops.
-- Share the technologies we used and why.
+This repository was created to:
+- Document learnings around building RAG applications while following Oracle LiveLabs workshops.
+- Share the technologies used and why.
 - Record challenges, debugging steps, and lessons learned.
 - Provide a quick reference for anyone exploring RAG.
 
