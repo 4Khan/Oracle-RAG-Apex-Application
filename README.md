@@ -29,7 +29,7 @@ This repository was created to:
 
 ---
 
-## 🛠 Tech Stack (Used in Our Setup)
+## 🛠 Tech Stack (Used in Setup)
 - **Cloud Platform**: Oracle Cloud Infrastructure (OCI)
 - **Vector Store**: Oracle Database 23ai
 - **Embeddings Model**: all-MiniLM-L12-v2
