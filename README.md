@@ -1,7 +1,7 @@
 # Notes from Oracle LiveLabs: Building RAG Applications
 
 > Personal notes and learnings from following Oracle LiveLabs workshops on Retrieval-Augmented Generation (RAG).  
-> **No workshop code is included.** These are our reflections, evaluations, and debugging logs.
+> **No workshop code is included.** These are reflections, evaluations, and debugging logs.
 
 ---
 
