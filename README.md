@@ -65,7 +65,13 @@ Example: **[2025-09-10] Irrelevant Context in Answers**
 - **Symptom:**  
 - **Root Cause:**  
 - **Fix:**  
-- **Notes:**  
+- **Notes:**
+
+**ORA-20401: Authorization Failed for URI**  
+- **Symptom:** DBMS_CLOUD package cannot access object storage.
+- **Root Cause:** Two possible causes, user authorisation is invalid or user authorisation is valid but cannot access the bucket.
+- **Fix:** In the case experienced here, the fix was...
+- **Notes:**
 
 ---
 
