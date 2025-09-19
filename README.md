@@ -56,11 +56,6 @@ flowchart LR
 ## ⚠️ Challenges & Debugging Log
 > A rolling log of issues, root causes, and fixes.
 
-Example: **[2025-09-10] Irrelevant Context in Answers**  
-- **Symptom:** Model cited unrelated chunks.  
-- **Root Cause:** Chunk size too large; missing metadata.  
-- **Fix:** Reduced chunk size to ~500 tokens with overlap; added titles to metadata; enabled hybrid search.
-
 **Error Message: ORA-20401: Authorization Failed for URI**  
 - **Symptom:** DBMS_CLOUD package cannot access object storage.
 - **Root Cause:** Two possible causes, user authorisation is invalid or user authorisation is valid but cannot access the bucket.
@@ -87,14 +82,6 @@ Example: **[2025-09-10] Irrelevant Context in Answers**
 
   <img width="1092" height="275" alt="image" src="https://github.com/user-attachments/assets/eda64d43-e0f6-42ed-ba9b-5d8f646ef946" />
 
-
-
-**[YYYY-MM-DD] [Short Title]**  
-- **Symptom:**  
-- **Root Cause:**  
-- **Fix:** 
-- **Notes:**
-  
 ---
 
 ## ✅ Lessons Learned
