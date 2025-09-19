@@ -70,7 +70,17 @@ Example: **[2025-09-10] Irrelevant Context in Answers**
 **ORA-20401: Authorization Failed for URI**  
 - **Symptom:** DBMS_CLOUD package cannot access object storage.
 - **Root Cause:** Two possible causes, user authorisation is invalid or user authorisation is valid but cannot access the bucket.
-- **Fix:** In the case experienced here, the fix was...
+- **Fix:** In the case experienced here, user authorisation was invalid, and the fix was to replace the username when creating the web credential with your email address:
+  
+BEGIN
+    <br> DBMS_CLOUD.CREATE_CREDENTIAL(
+      <br> credential_name => 'OBJS_CREDENTIAL',
+      <br> username => 'your_email@email.com',
+      <br> password=> 'your_gen_token'
+  <br> );
+<br> END;
+<br> /
+
 - **Notes:**
 
 ---
