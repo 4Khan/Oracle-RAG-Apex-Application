@@ -88,7 +88,7 @@ flowchart LR
 
 ## ✅ Lessons Learned
 - LiveLabs aren't flawless, but provide good hands on experience in using some of the latest cloud technology that Oracle has to offer, including their Generative AI services.
-- You may need to debug application code as you follow along and specific help isn't the easiest to find across the internet.
+- You may need to debug application code as you follow a lab and specific help isn't the easiest to find across the internet.
 
 ---
 
