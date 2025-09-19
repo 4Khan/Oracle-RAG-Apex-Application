@@ -56,6 +56,8 @@ flowchart LR
 ## ⚠️ Challenges & Debugging Log
 > A rolling log of issues, root causes, and fixes.
 
+### LiveLab: RAG example with Oracle AI Vector Search
+
 **Error Message: ORA-20401: Authorization Failed for URI**  
 - **Symptom:** DBMS_CLOUD package cannot access object storage.
 - **Root Cause:** Two possible causes, user authorisation is invalid or user authorisation is valid but cannot access the bucket.
