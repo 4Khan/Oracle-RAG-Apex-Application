@@ -61,28 +61,40 @@ Example: **[2025-09-10] Irrelevant Context in Answers**
 - **Root Cause:** Chunk size too large; missing metadata.  
 - **Fix:** Reduced chunk size to ~500 tokens with overlap; added titles to metadata; enabled hybrid search.
 
+**Error Message: ORA-20401: Authorization Failed for URI**  
+- **Symptom:** DBMS_CLOUD package cannot access object storage.
+- **Root Cause:** Two possible causes, user authorisation is invalid or user authorisation is valid but cannot access the bucket.
+- **Fix:** In the case experienced here, user authorisation was invalid, and the fix was to replace the username with your email address when creating the web credential:
+  
+    BEGIN
+        <br> DBMS_CLOUD.CREATE_CREDENTIAL(
+          <br> credential_name => 'OBJS_CREDENTIAL',
+          <br> username => 'your_email@emailprovider.com',
+          <br> password=> 'your_gen_token'
+      <br> );
+    <br> END;
+    <br> /
+
+**Error Message: ORA-20404: Object not found**  
+- **Symptom:** Unable to upload documents via APEX application to be stored in Object Storage bucket.
+- **Root Cause:** Invalid guidance in LiveLab of string to be passed as 'TENANCY_NAME'.
+- **Fix:** Replace value for 'TENANCY_NAME' with Object Storage namespace.
+- **Notes:** The LiveLab asks you to use save your tenancy name as displayed on your Oracle Cloud home page here:
+  
+  <img width="315" height="96" alt="image" src="https://github.com/user-attachments/assets/1253b06b-8bbd-4cf5-a378-2ecd4c843152" />
+
+  However, the actual value for the parameter 'TENANCY_NAME' in the application code should be the Object Storage namespace. This was discovered by debugging the application code and finding out how the parameter was being used:
+
+  <img width="1092" height="275" alt="image" src="https://github.com/user-attachments/assets/eda64d43-e0f6-42ed-ba9b-5d8f646ef946" />
+
+
+
 **[YYYY-MM-DD] [Short Title]**  
 - **Symptom:**  
 - **Root Cause:**  
-- **Fix:**  
+- **Fix:** 
 - **Notes:**
-
-**ORA-20401: Authorization Failed for URI**  
-- **Symptom:** DBMS_CLOUD package cannot access object storage.
-- **Root Cause:** Two possible causes, user authorisation is invalid or user authorisation is valid but cannot access the bucket.
-- **Fix:** In the case experienced here, user authorisation was invalid, and the fix was to replace the username when creating the web credential with your email address:
   
-BEGIN
-    <br> DBMS_CLOUD.CREATE_CREDENTIAL(
-      <br> credential_name => 'OBJS_CREDENTIAL',
-      <br> username => 'your_email@email.com',
-      <br> password=> 'your_gen_token'
-  <br> );
-<br> END;
-<br> /
-
-- **Notes:**
-
 ---
 
 ## ✅ Lessons Learned
