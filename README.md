@@ -100,7 +100,8 @@ Here are a couple of screenshots of the application in action:
 
 ## ✅ Lessons Learned
 - LiveLabs aren't flawless, but provide good hands on experience in using some of the latest cloud technology that Oracle has to offer, including their Generative AI services.
-- You may need to debug application code as you follow a lab and lab specific help isn't the easiest to find across the internet.
+- You may need to debug application code as you follow along as things don't always work as expected.
+- Lab specific help isn't the easiest to find across the internet, so you are best placed to reach out to the author if stuck.
 
 ---
 
