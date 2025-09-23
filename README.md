@@ -55,7 +55,7 @@ flowchart LR
 
 ## 🖼 Application Screenshots
 
-Here are a few screenshots of the application in action:
+Here are a couple of screenshots of the application in action:
 
 ### Home Screen
 <img width="1682" height="1077" alt="image" src="https://github.com/user-attachments/assets/8a1c7c8c-698f-485c-b41d-3ea8c4373ff0" />
