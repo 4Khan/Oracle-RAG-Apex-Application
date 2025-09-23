@@ -94,7 +94,8 @@ flowchart LR
 
 ## 📚 References
 
-- Oracle LiveLabs
+- [Oracle AI Vector Search with RAG Basic Example](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=4127&clear=RR,180&session=107404132415880)
+- [Troubleshooting DBMS_CLOUD access to object storage](https://blogs.oracle.com/datawarehousing/post/troubleshooting-dbmscloud-access-to-object-storage)
 
 ---
 
