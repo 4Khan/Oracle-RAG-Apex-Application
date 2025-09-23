@@ -74,7 +74,7 @@ flowchart LR
 
 **Error Message: ORA-20404: Object not found**  
 - **Symptom:** Unable to upload documents via APEX application to be stored in Object Storage bucket.
-- **Root Cause:** Invalid guidance in LiveLab of string to be passed as 'TENANCY_NAME'.
+- **Root Cause:** Incorrect guidance in LiveLab of string to be passed as 'TENANCY_NAME'.
 - **Fix:** Replace value for 'TENANCY_NAME' with Object Storage namespace.
 - **Notes:** The LiveLab asks you to use save your tenancy name as displayed on your Oracle Cloud home page here:
   
